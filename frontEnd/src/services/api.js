@@ -1,6 +1,4 @@
-const API_BASE = (typeof window !== 'undefined' && window.location.port === '3000')
-  ? `${window.location.protocol}//${window.location.hostname}:4000`
-  : '';
+const API_BASE = 'https://resume-ats-tracker-w1zt.onrender.com';
 
 async function request(path, options = {}) {
   let response;
